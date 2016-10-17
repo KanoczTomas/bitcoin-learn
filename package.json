@@ -1,0 +1,14 @@
+{
+  "name": "count-btc-full-nodes",
+  "version": "1.0.0",
+  "description": "counts btc full nodes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomas Kanocz",
+  "license": "ISC",
+  "dependencies": {
+    "buffermaker": "^1.2.0"
+  }
+}
