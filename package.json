@@ -1,14 +1,25 @@
 {
-  "name": "count-btc-full-nodes",
+  "name": "bitcoin-learn",
   "version": "1.0.0",
-  "description": "counts btc full nodes",
-  "main": "index.js",
+  "description": "learning the bitcoin internals by creating usefull code",
+  "main": "connect.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KanoczTomas/bitcoin-learn.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "learn"
+  ],
   "author": "Tomas Kanocz",
-  "license": "ISC",
-  "dependencies": {
-    "buffermaker": "^1.2.0"
-  }
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KanoczTomas/bitcoin-learn/issues"
+  },
+  "homepage": "https://github.com/KanoczTomas/bitcoin-learn#readme"
 }
