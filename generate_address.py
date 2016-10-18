@@ -21,10 +21,10 @@ def create_p2pkh_address(public_key, debug=False):
     print "public key is: " + public_key.encode('hex')
     print "after pading 0x04: " + padded_pk.encode('hex')
     print "sha256 of padded public key: " + hashlib.sha256(padded_pk).hexdigest()
-    print "ripemd16 or sha256 of padded public key: " + hash_pk.encode('hex')
+    print "ripemd16 of sha256 of padded public key: " + hash_pk.encode('hex')
     print "padding with 0x00 to create checksum: " + padded_hash_pk.encode('hex')
-    print "checksum hash = sha256(sha256(of above): " + hashlib.sha256(hashlib.sha256(padded_hash_pk).digest()).digest()
-    print "taking 4 bytes of checksum hash and concatenating to padded hash: " + address_bin
+    print "checksum hash = sha256(sha256(of above): " + hashlib.sha256(hashlib.sha256(padded_hash_pk).digest()).hexdigest()
+    print "taking 4 bytes of checksum hash and concatenating to padded hash: " + address_bin.encode('hex')
     print "base58 encoding of binary address follows ... "
 
   return base58.b58encode(address_bin)
